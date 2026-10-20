@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Paremia</title>
+    <meta name="description" content="Paremia is an open, cross-cultural map of the world's proverbs. Read the mission." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700,400i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Paremia — home">
+        <svg class="brand-mark" width="28" height="28" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" />
+          <path d="M20 4 V36" stroke="currentColor" stroke-width="1.5" />
+          <path d="M4 20 H36" stroke="currentColor" stroke-width="1.5" />
+          <circle cx="20" cy="20" r="4" fill="currentColor" />
+        </svg>
+        <span class="brand-word">Paremia</span>
+      </a>
+      <nav class="site-nav">
+        <a href="./#themes">Themes</a>
+        <a href="./#atlas">Atlas</a>
+        <a href="about.html">About</a>
+        <a href="contribute.html" class="nav-cta">Contribute</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="article">
+        <p class="eyebrow">About</p>
+        <h1>An open dictionary of the world's proverbs.</h1>
+        <p class="article-lede">
+          Every culture has said, in its own way, the same wise things. Paremia is the map of
+          where those sayings meet — and where they diverge.
+        </p>
+
+        <h2>The problem</h2>
+        <p>
+          Proverbs are the oldest form of common wisdom, and the most beautifully translated. The
+          Greek says the donkey called the rooster big-headed; the Arab says the camel doesn't see
+          its own hump; the English says the pot called the kettle black. All three cultures are
+          pointing at the same idea — projected hypocrisy — but you would have to be a linguist
+          and a folklorist to find that out today. Existing databases are authoritative and dated;
+          most modern sites are per-language collections that stop at their own edge.
+        </p>
+
+        <h2>The idea</h2>
+        <p>
+          One search bar. Type a word, a theme, or a proverb in any language. Paremia finds
+          matching proverbs across cultures and shows them together — original text, literal
+          translation, and the closest equivalent in your language, all keyed to a shared concept.
+          The second phase is an <em>atlas</em>: browse by theme, image, era, or region, and see
+          the shared wisdom of humanity as data.
+        </p>
+
+        <h2>How it's built</h2>
+        <p>
+          Every proverb belongs to a <em>concept cluster</em> — a group of sayings across cultures
+          that point at the same idea. Clusters are seeded from published paremiological work
+          (Matti Kuusi, ProverbNet, MAPS) and hand-curated. Each entry carries its original text,
+          transliteration, literal English translation, meaning gloss, cultural notes, source
+          citation, and edit history. The whole corpus is licensed
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and every
+          read endpoint of the API is free.
+        </p>
+
+        <h2>Who it's for</h2>
+        <ul>
+          <li>Anyone who has ever tried to translate a proverb and had it come out sideways.</li>
+          <li>Translators, poets, screenwriters, ad copywriters, ESL teachers.</li>
+          <li>
+            Linguists, folklorists, and comparative-literature scholars — who deserve a modern
+            interface for a very old subject.
+          </li>
+          <li>The people whose grandmothers had a saying for everything.</li>
+        </ul>
+
+        <h2>Principles</h2>
+        <ol>
+          <li>
+            <strong>Wiki, not walled garden.</strong> Free to read, free to reuse, open to
+            contribution.
+          </li>
+          <li>
+            <strong>Provenance first.</strong> Every entry cites its source. Folk-traditional
+            proverbs are labelled as such.
+          </li>
+          <li>
+            <strong>Culture, not passport.</strong> We tag proverbs by cultural tradition, not
+            modern nation-state, whenever the record supports it.
+          </li>
+          <li>
+            <strong>Literal <em>and</em> equivalent.</strong> We show both — the literal because
+            it's beautiful, the equivalent because it's useful.
+          </li>
+          <li>
+            <strong>Small edits, big archive.</strong> A proverb corpus grows one entry at a time.
+            We're patient.
+          </li>
+        </ol>
+
+        <h2>Status</h2>
+        <p>
+          This is an early public MVP. The seed corpus is a few dozen concept clusters across five
+          launch languages (English, Greek, Spanish, Arabic, Mandarin). Contribution flow, full
+          search backend, community features, and the atlas view are on the roadmap.
+        </p>
+        <p>
+          If you want to contribute a proverb, a language, or your expertise, <a href="contribute.html">start here</a>.
+        </p>
+
+        <blockquote>Every language has a proverb for this.</blockquote>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p class="brand-word footer-brand">Paremia</p>
+          <p class="footer-note">
+            An open dictionary of the world's proverbs. Data licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+          </p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="about.html">About</a>
+          <a href="contribute.html">Contribute</a>
+          <a href="./#atlas">Atlas</a>
+          <a href="./#themes">Themes</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
